@@ -1,0 +1,23 @@
+
+x<-matrix(rpois(100, 9),10)
+apply(mtcars,2,mean)
+#output:
+#mpg        cyl       disp         hp       drat         wt       qsec         vs         am 
+#20.090625   6.187500 230.721875 146.687500   3.596563   3.217250  17.848750   0.437500   0.406250 
+#gear       carb 
+#3.687500   2.812500
+
+
+apply(mtcars,2, function(x) sd(x)/sqrt(length(x)))
+#output:
+#mpg         cyl        disp          hp        drat          wt        qsec          vs 
+#1.06542396  0.31570933 21.90947271 12.12031731  0.09451874  0.17296847  0.31588992  0.08909831 
+#am        gear        carb 
+#0.08820997  0.13042656  0.28552971 
+
+
+names(mtcars)#displays the names
+#output:
+#s[1] "mpg"  "cyl"  "disp" "hp"   "drat" "wt"   "qsec" "vs"   "am"   "gear" "carb"
+
+
